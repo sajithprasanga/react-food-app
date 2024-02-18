@@ -20,12 +20,12 @@
     justify-content: space-between;
 }
 
-logo {
+.logo {
     font-weight:  bold;
     padding: 1rem;
 }
 
-header ul {
+.header ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -54,4 +54,12 @@ header ul {
 .menu a {
     width: 100%;
     min-width: 8rem;
+}
+
+.cart_count{
+    background-color: #ff4d4d;
+    color: white;
+    padding: 0.1rem 0.45rem;
+    border-radius: 100rem;
+    font-size: 0.9rem  ;
 }

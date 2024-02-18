@@ -28,7 +28,7 @@ function Header() {
                 <Link to="/profile">{user.name}</Link>
                 <div className={classes.menu}>
                   <Link to="/profile">Profile</Link>
-                  <Link to="/orders"></Link>
+                  <Link to="/orders">Order</Link>
                   <a onClick={logout}>Logout</a>
                 </div>
               </li> ) : (
@@ -38,7 +38,7 @@ function Header() {
             <li>
               <Link to="/cart">
                 cart
-                {cart.totalCount > 0 && <span>{cart.totalCount}</span>}
+                {cart.totalCount > 0 && <span className={classes.cart_count}>{cart.totalCount}</span>}
               </Link>
             </li>
           </ul>
