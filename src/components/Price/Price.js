@@ -1,10 +1,21 @@
 import React from 'react'
 
-function Price() {
+Price.defaultProps = {
+    locale: 'en-US',
+    currency: 'USD'
+}
+
+
+function Price({price, locale, currency}) {
+
+    const formatPrice = () =>
+        new Intl.NumberFormat(locale, {
+            style: 'currency' ,
+            currency,
+        }).format(price);
+
   return (
-    <div>
-      
-    </div>
+    <span>{formatPrice()}</span>
   )
 }
 
