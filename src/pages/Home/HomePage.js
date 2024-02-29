@@ -17,6 +17,7 @@ const reducer = (state, action) => {
       return state;
   }
 }
+
 function HomePage() {
   const [state, dispatch] = useReducer(reducer, initialState);
   const {foods, tags} = state;
